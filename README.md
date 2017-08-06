@@ -11,9 +11,6 @@ Follow steps 1-3 of https://github.com/ArchiveTeam/ArchiveBot/blob/master/INSTAL
 2. Configure your account details in abot-scripts/config.sh
 3. Run abot-scipts/setup.sh
 
-FIXME: Make setup.sh pre-load the hostkey for the ninja-tunnel or
-include it in the repo.
-
 This installs a cron script that checks that there is a tmux with the
 session name "archivebot" every even 10 minutes. Thus making sure that
 it will autostart after restarting the machine running it. If you
