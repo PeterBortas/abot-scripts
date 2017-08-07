@@ -4,6 +4,7 @@
 source ~/abot-scripts/config.sh
 
 tmux new -s archivebot \
-    new-session '~/abot-scripts/ninja-tunnel.sh' \; \
-    split-window '~/abot-scripts/pipeline.sh' \; \
+    set -g set-remain-on-exit on \; \
+    new-session '~/abot-scripts/ninja-tunnel.sh; bash' \; \
+    split-window '~/abot-scripts/pipeline.sh; bash' \; \
     detach-client
