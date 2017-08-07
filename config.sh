@@ -14,7 +14,7 @@ MYPIPELINE=YOUR-PIPELINE-NAME-GOES-HERE
 #export AO_ONLY=1
 
 # Make sure whatever is needed is in the path
-export PATH=$PATH:/opt/ateam/bin/:/r6pool/archivebot/ArchiveBot/pipeline/archivebot/
+export PATH=$PATH:/opt/ateam/bin/:$HOME/ArchiveBot/pipeline/archivebot/
 
 
 ######## Do not edit anything below this line ########
