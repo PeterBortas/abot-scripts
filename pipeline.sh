@@ -10,5 +10,5 @@ export FINISHED_WARCS_DIR=$HOME/warcs4fos
 export PATH=$PATH:/opt/ateam/bin/
 
 ~/.local/bin/run-pipeline3 pipeline.py --disable-web-server \
-        --concurrent 2  2>&1 | \
+        --concurrent 2 $MYPIPELINE 2>&1 | \
     tee "pipeline-$(date -u +"%Y-%m-%dT%H_%M_%SZ").log"
