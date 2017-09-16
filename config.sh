@@ -38,6 +38,18 @@ if [ ! -x /usr/bin/wpull ]; then
     exit 1
 fi
 
+if [ ! -d $FINISHED_WARCS_DIR ]; then
+    echo "FATAL: Missing upload directory $FINISHED_WARCS_DIR"
+    exit 1
+fi
+
+if touch $FINISHED_WARCS_DIR/test_permissions; then
+    rm $FINISHED_WARCS_DIR/test_permissions
+else
+    echo "FATAL: Bad permissions on $FINISHED_WARCS_DIR"
+    exit 1
+fi    
+
 if [ $MYUSER = "YOUR-USERNAME-GOES-HERE" ]; then
     echo "FATAL: No account configured, unable to start tunnel"
     exit 1
