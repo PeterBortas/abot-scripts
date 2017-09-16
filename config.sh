@@ -17,6 +17,9 @@ MYPIPELINE=YOUR-PIPELINE-NAME-GOES-HERE
 # * phantomjs and wpull as of writing
 export PATH=$PATH:/opt/ateam/bin/:$HOME/.local/bin/wpull
 
+# Number of parallel jobs that your server can handle
+export CONCURRENCY=2
+
 # FIXME: The above wont really work for wpull right now. The pipeline is
 # throwing away PATH somewhere, so wpull needs to be in the default
 # PATH: /usr/bin/wpull
